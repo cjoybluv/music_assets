@@ -1,0 +1,15 @@
+<h1><%= artist.name %></h1>
+
+<form action="/album/new" method="POST" role="form">
+  <legend>Create an Album</legend>
+
+  <div class="form-group">
+    <label for="">Album Name</label>
+    <input name="name" type="text" class="form-control" id="" placeholder="Input field" autofocus>
+    <label for="">Artist Id</label>
+    <input name="artistId" value="<%= artist.id %>" type="text" class="form-control" id="" placeholder="Input field" autofocus>
+
+  </div>
+
+  <button type="submit" class="btn btn-primary">Create</button>
+</form>

@@ -1,0 +1,15 @@
+<h2>Artist Listing</h2>
+
+<div class="row">
+  <div class="pull-right">
+    <a href="/artist/new"><button class="btn btn-success">ADD</button></a>
+  </div>
+</div>
+
+<div class="row">
+  <% artists.forEach(function(artist){ %>
+    <div class="well">
+      <a href="/artist/<%= artist.id %>"><%= artist.name %></a> -- <%= artist.genre %><span class="pull-right"><a href="/artist/<%= artist.id %>/delete" class="glyphicon glyphicon-trash"></a></span>
+    </div>
+  <% }) %>
+</div>
